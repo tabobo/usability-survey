@@ -1,0 +1,308 @@
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    min-width: 320px;
+}
+
+#title {
+    font-weight: 300;
+}
+
+#description {
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 30px;
+    width: 500px;
+    margin: 20px auto;
+}
+
+p.radio {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#form-box {
+    max-width: 600px;
+    padding: 0px 20px;
+    background: #f4f7f8;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: url("https://image.flaticon.com/icons/svg/60/60781.svg");
+    background-position: 99% 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+.custom-select select {
+    background: #fff;
+    border: 1px solid #d4d7da;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+}
+
+.custom-select select:focus {
+    background: #d2d9dd;
+}
+
+.custom-select select {
+    -webkit-appearance: menulist-button;
+    height: 3.2em;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.labels {
+    float: left;
+}
+
+.comment {
+    text-align: left;
+    margin: 0;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+    background: #fff;
+    border: 1px solid #d4d7da;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 18px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+    background: #d2d9dd;
+}
+
+.radio-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    text-align: left;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.radio-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #d4d7da;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+
+.radio-label:hover input~.checkmark {
+    background-color: #d2d9dd;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.radio-label input:checked~.checkmark {
+    background-color: #1abc9c;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio-label input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.radio-label .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+.number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+#submit {
+    margin: 12px auto;
+}
+
+button[type="submit"] {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-radius: 5px;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #109177;
+}
+
+#survey-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* The container */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #d4d7da;
+    background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark2 {
+    background-color: #d2d9dd;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark2 {
+    background-color: #1abc9c;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark2:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark2:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

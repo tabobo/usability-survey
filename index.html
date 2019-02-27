@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey form</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div id="form-box">
+    <p id="description">
+      Thank you for participating in this brief survey regarding our website. Your valuable feedback will help us to
+      improve the website to better serve your needs. </p>
+    <!-- Fields  -->
+    <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+      <fieldset>
+        <legend><span class="number">1</span>Personal</legend>
+        <div class="labels">
+          <label id="name-label" for="name">Name: </label>
+        </div>
+        <div>
+          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+        <div class="labels">
+          <label id="email-label" for="email">Email: </label>
+        </div>
+        <div>
+          <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+        </div>
+        <div class="labels">
+          <label id="number-label" for="age">Age: </label>
+        </div>
+        <div>
+          <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+        </div>
+      </fieldset>
+
+      <!-- Dropdown -->
+      <fieldset>
+        <legend><span class="number">2</span>Questions</legend>
+        <div class="labels">
+          <label for="profession">Please select the category that best describes your profession:
+          </label>
+        </div>
+        <div class="custom-select">
+          <select id="dropdown" name="profession" class="dropdown">
+            <option value="art">Art</option>
+            <option value="education">Education</option>
+            <option value="health">Healthcare</option>
+            <option value="media">Media</option>
+            <option value="sales">Sales/Marketing</option>
+            <option value="student">Student</option>
+            <option value="it">IT/Technology</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Radio-buttons -->
+        <p class="radio">Was the information clearly presented?</p>
+        <label for='info-1' class='radio-label'>Yes<input id='info-1' type='radio' name="info" value='yes' checked />
+          <span class="checkmark"></span>
+        </label>
+        <label for='info-2' class='radio-label'>No<input id='info-2' type='radio' name='info' value='no' />
+          <span class="checkmark"></span>
+        </label>
+
+        <p class="radio">Were you able to find information you were looking for on our website?</p>
+
+        <label for="search1" class="radio-label">Yes, easily<input id="search1" name="lookingInfo" value="easily" type="radio"
+            checked>
+          <span class="checkmark"></span>
+        </label>
+        <label for="search2" class="radio-label">Yes, eventualy<input id="search2" name="lookingInfo" value="eventualy"
+            type="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label for="search3" class="radio-label">No<input id="search3" name="lookingInfo" value="no" type="radio">
+          <span class="checkmark"></span>
+        </label>
+        <!-- Checkboxes -->
+        <p class="radio">To begin, please tell us the main reason(s) you visited our website today. (Check
+          all that apply): </p>
+        
+        <label class="container">To learn more about the company
+          <input name="reasons" value="company" type="checkbox" checked="checked">
+          <span class="checkmark2"></span>
+        </label>
+        <label class="container">To find
+          information about a product or services
+          <input name="reasons" value="info" type="checkbox">
+          <span class="checkmark2"></span>
+        </label>
+        <label class="container">To
+          purchase a product or service
+          <input name="reasons" value="purchase" type="checkbox">
+          <span class="checkmark2"></span>
+        </label>
+        <label class="container">To find
+          contact information for the company or a particular individual
+          <input name="reasons" value="contact" type="checkbox">
+          <span class="checkmark2"></span>
+        </label>
+        <label class="container">To read an
+          article or news story
+          <input name="reasons" value="read" type="checkbox">
+          <span class="checkmark2"></span>
+        </label>
+        <label class="container">Other
+              <input name="reasons" value="contact" type="checkbox">
+              <span class="checkmark2"></span>
+        </label>
+      </fieldset>
+      <!-- Input-field -->
+      <fieldset>
+        <legend><span class="number">3</span>Additional info</legend>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="comments"><p class="comment">Please provide any other comments or feedback that you would like to share to help us
+              improve our website.</p>
+            </label>
+          </div>
+          <div class="rightTab">
+            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <!-- Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
